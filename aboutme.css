@@ -1,0 +1,70 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    margin: 20px;
+    
+}
+
+/*p tag for spacing of the paragraphs*/
+p :first-line {
+    text-indent: 5px;
+}
+
+head {
+    font-family: fantasy;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: Luminari, fantasy;
+    font-size: 45px;
+}
+
+img {
+    float: right;
+    margin: 10px;
+    border: 5px;
+    border-color: blue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: calc(0.75 * 20px);
+    margin-bottom: calc(0.1 * 20px + 0.23 * 20px);
+  }
+
+
+.table-fixed {
+    table-layout: fixed;
+    width: 750px;
+  }
+  
+.table-header {
+    width: 120px;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+  
+.cs-2420 {
+    background-color: #007bff;
+    color: white; 
+}
+  
+.cs-2550 {
+    background-color: #8561e5; 
+    color: white; 
+}
+  
+.geo-1015 {
+    background-color: #28a745; 
+    color: white; 
+}
+  
+.study {
+    background-color: #ffc107; 
+    color: black; 
+}

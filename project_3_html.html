@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro to F1</title>
+  <link rel="stylesheet" type="text/css" href="project_3_css.css">
+    
+</head>
+<body>
+  <header>
+    <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/64px-F1.svg.png" alt="Formula 1 Logo"> AN INTRO TO FORMULA 1 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/64px-F1.svg.png" alt="Formula 1 Logo"></h1>  
+    
+  </header>
+    <nav>
+        <h2>MENU: 
+            <button id="home-button">Home</button>
+            <button id="drivers-button">Drivers</button>
+            <button id="construtors-button">Construtors</button>
+            <button onclick="window.location.href='https://www.formula1.com'">Formula 1 Official Website</button>
+            <button onclick="window.location.href='https://www.redbullracing.com/int-en'">Oracle RedBull Racing</button>
+        </h2>
+    </nav>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4wRhb71L11Q" title="How Verstappen Won From Tenth | 2022 Hungarian Grand Prix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <section id="home">
+        <h3>Intro</h3>
+        <p>
+            F1 is the most technical motorsport in the world as well as the pincal of motorsport. It takes the best drivers in the world and puts them against each other for the glory of the drivers championship.<br>
+            However it is not just a comption for the drivers but the teams as well. Over the course of the season the teams will bring upgrades to their cars and compeat for the coveted construtors championship<br>
+        </p>
+        <figure>
+            <span><img src="https://www.si.com/.image/t_share/MjA0NjUwMDM0NDcyNDI5MTU3/red-bull.jpg" alt="RedBull Racing F1 car" width="600" height="350"></span>
+        </figure>
+    </section>
+    <section id="drivers" style="display: none;">
+        <h4>Drivers Championship</h4>
+        <p>
+            The drivers championship has 20 drivers in and each weekend during the race they fight for points. These points are awarded to the top 10 drivers with p10 getting 1 point and p1, the winner, getting 25 points.<br>
+            There is also 1 point for the fastest lap but you must be in the top 10 to be awarded it. These points are added together and the driver with the most at the end of the season is the chapmion of the world.<br>
+        </p>
+        <figure>
+            <img src="https://static01.nyt.com/images/2023/09/16/multimedia/16sp-singapore-races-inyt-01-hgvc/16sp-singapore-races-inyt-01-hgvc-videoSixteenByNineJumbo1600.jpg" alt="F1 cars racing" width="600" height="350">
+        </figure>
+    </section>
+    <section id="construtors" style="display: none;">
+        <h5>Construtors Championship</h5>
+        <p>
+            The construtors championship is against the 10 teams on the grid. The points from both divers for the team are combined together to get a grand total to show which team had the best overall car.<br>
+        </p>
+        <figure style="justify-content: center;">
+            <img src="https://pbs.twimg.com/media/GCbjXwiW0AAFb6q?format=jpg&name=4096x4096" alt="F1 teams and drivers" width="600" height="350">
+            <figcaption>F1 teams from 2024 with drivers and team princpile in the middle</figcaption>  
+        </figure>
+    </section>
+    <footer>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/64px-F1.svg.png" alt="Formula 1 Logo">
+            <button id="home-button">Home</button>
+            <button id="drivers-button">Drivers</button>
+            <button id="construtors-button">Construtors</button>
+            <button onclick="window.location.href='https://www.formula1.com'">Formula 1 Official Website</button>
+            <button onclick="window.location.href='https://www.redbullracing.com/int-en'">Oracle RedBull Racing</button>
+        </div>
+    </footer>
+    <script>
+        const homeButton = document.getElementById('home-button');
+        const driversButton = document.getElementById('drivers-button');
+        const constructorsButton = document.getElementById('construtors-button');
+        const homeSection = document.getElementById('home');
+        const driversSection = document.getElementById('drivers');
+        const constructorsSection = document.getElementById('construtors');
+
+        
+        function hideAllSections() {
+        driversSection.style.display = 'none';
+        constructorsSection.style.display = 'none';
+        }
+       
+        function showSection(section) {
+        section.style.display = 'block';
+        section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        homeButton.addEventListener('click', () => {
+        hideAllSections();
+        showSection(homeSection);
+        });
+
+        driversButton.addEventListener('click', () => {
+        hideAllSections();
+        showSection(driversSection);
+        });
+
+        constructorsButton.addEventListener('click', () => {
+        hideAllSections();
+        showSection(constructorsSection);
+        });
+    </script>
+  </body>
+</html>
+
+

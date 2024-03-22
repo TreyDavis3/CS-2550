@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: OCR A Std, monospace;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 20px;
+  background-color: whitesmoke;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #99ccff;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin: 0 10px;
+}
+
+nav button {
+  font-family: OCR A Std, monospace;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: whitesmoke;
+  border: 2px solid #FF1801;
+  border-radius: 12px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+nav button:hover{
+    background-color: #FF1801;
+    color:whitesmoke;
+}
+
+nav {
+    display: flex;
+    font-family: OCR A Std, monospace;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #99ccff;
+    margin-bottom: 20px;
+  }
+
+.video-container {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+section {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+section h3,
+section h4,
+section h5 {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+section p {
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+#construtors-pic {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+section img {
+  max-width: 100%;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%; 
+}
+
+footer button {
+    font-family: OCR A Std, monospace;
+    margin-left: 5px;
+    padding: 5px 5px;
+    border: none;
+    background-color: whitesmoke;
+    border: 2px solid #FF1801;
+    border-radius: 12px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+footer button:hover{
+    background-color: #FF1801;
+    color:whitesmoke;
+}
+
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+  
+ 
+#drivers img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+  
+#constructors img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
